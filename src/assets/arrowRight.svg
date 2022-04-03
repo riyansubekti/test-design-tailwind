@@ -1,0 +1,11 @@
+<svg id="Layer_1" data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" width="5" height="8.5" viewBox="0 0 5 8.5">
+  <defs>
+    <style>
+      .cls-1 {
+        fill: #b8b8b8;
+      }
+    </style>
+  </defs>
+  <title>ds-arrow-right-footer</title>
+  <path class="cls-1" d="M.7,8.5c-.2,0-.3-.1-.5-.3a.7.7,0,0,1,0-1l3-3L.2,1.3A.8.8,0,0,1,.2.2a.7.7,0,0,1,1,0L4.8,3.7a.7.7,0,0,1,0,1L1.3,8.2A.9.9,0,0,1,.7,8.5Z" transform="translate(0 0)"></path>
+</svg>
