@@ -14,11 +14,11 @@ const SlidePhotos = ({ dataSlide, dataCardIcon }) => {
             {/* w-slide */}
             <div className="relative inline-block align-top w-full h-full whitespace-normal text-left">
               {/* slide-wrp-1 */}
-              <div className="relative flex w-full h-auto justify-between">
+              <div className="relative flex flex-wrap w-full h-auto justify-between">
                 {/* slide-collection-wrp */}
                 {
                   dataSlide.map(data => (
-                  <div key={data.id} className="w-[32%] h-auto flex-col justify-between">
+                  <div key={data.id} className="lg:w-[32%] lg:mb-0 md:w-[46%] sm:w-full mb-5 h-auto flex-col justify-between">
                     {/* slider-collection-wrapper w-dyn-list */}
                     <div className="h-full">
                       {/* slider-collection-list w-dyn-items */}
@@ -70,10 +70,10 @@ const SlidePhotos = ({ dataSlide, dataCardIcon }) => {
           </div>
         </div>
         {/* links-grid-1 */}
-        <div className="flex w-[90%] max-w-[1400px] -mt-3 mx-auto justify-between auto-cols-fr grid-cols-3 grid-flow-row">
+        <div className="flex flex-wrap w-[90%] max-w-[1400px] -mt-3 mx-auto justify-between auto-cols-fr grid-cols-3 grid-flow-row">
           {
             dataCardIcon.map(data => (
-              <CardIcon title={data.title} icon={data.icon} desc={data.desc} />
+              <CardIcon key={data.id} title={data.title} icon={data.icon} desc={data.desc} />
             ))
           }
         </div>

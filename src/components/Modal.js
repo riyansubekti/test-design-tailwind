@@ -1,8 +1,8 @@
 import React from 'react'
-import { ModalContext } from '../context';
+import { GlobalContext } from '../context';
 
 const Modal = () => {
-  const { setModal } = React.useContext(ModalContext);
+  const { setModal } = React.useContext(GlobalContext);
   return (
     // modal-main-1
     <div className="flex fixed left-0 right-0 top-0 bottom-0 z-[200] w-full h-full flex-col justify-center items-center bg-[rgb(18,18,18,.98)] ">
@@ -19,7 +19,7 @@ const Modal = () => {
           {/* modal-search-1 w-form */}
           <form className="relative mb-0">
             {/* search-field-main w-input kurang transition */}
-            <input type="search" className="h-[60px] mb-3 pr-5 pl-[60px] bg-transparent bg-icon-search bg-[length:20px] font-sohemono-buch tracking-[0.12px] border-[1.5px] border-solid border-[rgb(38,38,38)] rounded-[30px] bg-input-search bg-no-repeat block w-full py-2 px-3 text-sm align-middle text-[#333]" autocomplete="off" autofocus="true" maxlength="256" name="query" placeholder="Search…" id="search-field" required="" />
+            <input type="search" className="h-[60px] mb-3 pr-5 pl-[60px] bg-transparent bg-icon-search bg-[length:20px] font-sohemono-buch tracking-[0.12px] border-[1.5px] border-solid border-[rgb(38,38,38)] rounded-[30px] bg-input-search bg-no-repeat block w-full py-2 px-3 text-sm align-middle text-[#333]" autoComplete="off" autofocus="true" maxLength="256" name="query" placeholder="Search…" id="search-field" required="" />
             {/* search-btn-1 w-button kurang transition */}
             <input type="submit" value="Search" className="w-full h-[60px] bg-[rgb(33,33,33)] font-sohemono text-white tracking-[0.16px] border border-solid border-[rgb(43,43,43)] rounded-[30px]" />
           </form>

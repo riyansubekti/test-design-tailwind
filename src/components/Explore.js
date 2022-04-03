@@ -11,7 +11,7 @@ const Explore = ({ dataExplore }) => {
           {/* link-card-2 */}
           {
             dataExplore.map(data => (
-              <div className="overflow-hidden w-[49%] pt-[50px] border border-solid border-[hsla(0,0%,100%,.07)] rounded-2xl bg-[#171717] no-underline">
+              <div key={data.id} className="overflow-hidden lg:w-[49%] lg:mb-0 md:w-[full] mb-5 pt-[50px] border border-solid border-[hsla(0,0%,100%,.07)] rounded-2xl bg-[#171717] no-underline">
                 {/* link-card-wrp-1 */}
                 <div className="px-5">
                   {/* card-txt-3 */}
@@ -75,7 +75,7 @@ const Explore = ({ dataExplore }) => {
               {/* form-wrp-1 */}
               <div className="flex w-full h-14 justify-between flex-wrap">
                 {/* txt-field-1 w-input */}
-                <input type="email" className="h-full mb-0 px-5 flex-1 border-[1.5px] border-solid border-white rounded-l-lg bg-transparent font-sohemono-buch text-white tracking-[.24px]" autocomplete="off" maxlength="256" name="Subscribe-Email" data-name="Subscribe Email" placeholder="Enter your email…" id="Subscribe-Email" required="" />
+                <input type="email" className="h-full mb-0 px-5 flex-1 border-[1.5px] border-solid border-white rounded-l-lg bg-transparent font-sohemono-buch text-white tracking-[.24px]" autoComplete="off" maxLength="256" name="Subscribe-Email" data-name="Subscribe Email" placeholder="Enter your email…" id="Subscribe-Email" required="" />
                 {/* form-btn-1 w-butto kurang transition */}
                 <input type="submit" value="Try It" data-wait="One sec…" className="h-full px-5 rounded-r-lg bg-white font-sohemono text-[rgb(5,5,5)] text-sm leading-[22px] tracking-[0.24px] border-[1.5px] border-solid border-white" />
               </div>

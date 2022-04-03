@@ -7,13 +7,14 @@ import LogoBanner from '../components/LogoBanner'
 import Modal from '../components/Modal'
 import SlidePhotos from '../components/SlidePhotos'
 import { dataSlide, dataCardIcon, dataExplore } from '../data'
-import { ModalContext } from '../context'
+import { GlobalContext } from '../context'
 
 const Home = () => {
   const [modal, setModal] = React.useState(false);
+  const [menu, setMenu] = React.useState(false);
   return (
     <div className="relative overflow-hidden w-full">
-      <ModalContext.Provider value={{modal, setModal}}>
+      <GlobalContext.Provider value={{modal, setModal, menu, setMenu}}>
         <Header />
         <Hero />
         <LogoBanner />
@@ -21,7 +22,7 @@ const Home = () => {
         <Explore dataExplore={dataExplore} />
         <Footer />
         {modal && <Modal />}
-      </ModalContext.Provider>
+      </GlobalContext.Provider>
     </div>
   )
 }
